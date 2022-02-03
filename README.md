@@ -1,6 +1,8 @@
 # A brief explanation
 This script provides way to setup a monitoring service of specific MACs for a Hostapd Wifi Access Point.
 
+It uses the *hostapd-cli list_sta* to list the connected devices to the AP.
+
 # Setup
 1. Install python3
 
