@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitors specific MACs listed in /etc/hostadp/mac-monitoring.json when they connect to the AP wlan0 of hostapd
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /etc/hostapd/mac-monitoring.py
+
+[Install]
+WantedBy=multi-user.target
